@@ -1,107 +1,165 @@
-<!DOCTYPE html>
-<html lang="ko">
+body {
+  margin:auto;
+  background-color: rgb(241, 241, 241);
+}
 
-<head>
-  <meta charset="UTF-8">
-  <title>네이버</title>
-  <link href="naver.css" rel="stylesheet" type="text/css" />
-</head>
+#naver_title {
+  position: relative;
+  height: 44px;
+  margin-top: 64px;
+  overflow: hidden;
+}
 
-<body>
-  <div id="naver_title"><img id="naver_logo" src="image/m_naver_logo_20191126.png"></div>
-  <div id="big_background">
-    <div class="join_title">아이디</div>
-    <input type="id" class="text_box">
-    <div id="naver_com">@naver.com</div>
-    <div class="join_title">비밀번호</div>
-    <input type="password" class="text_box">
-    <div class="password_box">
-      <img class="password" src="image/m_icon_pw_step.png">
-    </div>
-    <div class="join_title">비밀번호 재확인</div>
-    <input type="password" class="text_box">
-    <div id="password_box1" class="password_box">
-      <img id="password1" class="password" src="image/m_icon_pw_step.png">
-    </div>
-    <div class="join_title">이름</div>
-    <input type="text" class="text_box">
-    <div class="join_title">생년월일</div>
-    <input type="text" class="text_box" placeholder="년도">
+#naver_logo {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  height: 100px;
+  display: flex;
+}
 
-    <select class="day">
-      <option value="">월</option>
-      <option value="학생">1월</option>
-      <option value="회사원">2월</option>
-      <option value="기타">3월</option>
-      <option value="기타">4월</option>
-      <option value="기타">5월</option>
-      <option value="기타">6월</option>
-      <option value="기타">7월</option>
-      <option value="기타">8월</option>
-      <option value="기타">9월</option>
-      <option value="기타">10월</option>
-      <option value="기타">11월</option>
-      <option value="기타">12월</option>
-    </select>
-    <select class="day">
-      <option value="">일</option>
-      <option value="학생">1일</option>
-      <option value="회사원">2일</option>
-      <option value="기타">3일</option>
-      <option value="기타">4일</option>
-      <option value="기타">5일</option>
-      <option value="기타">6일</option>
-      <option value="기타">7일</option>
-      <option value="기타">8일</option>
-      <option value="기타">9일</option>
-      <option value="기타">10일</option>
-      <option value="기타">11일</option>
-      <option value="기타">12일</option>
-      <option value="기타">13일</option>
-      <option value="기타">14일</option>
-      <option value="기타">15일</option>
-      <option value="기타">16일</option>
-      <option value="기타">17일</option>
-      <option value="기타">18일</option>
-      <option value="기타">19일</option>
-      <option value="기타">20일</option>
-      <option value="기타">21일</option>
-      <option value="기타">22일</option>
-      <option value="기타">23일</option>
-      <option value="기타">24일</option>
-      <option value="기타">25일</option>
-      <option value="기타">26일</option>
-      <option value="기타">27일</option>
-      <option value="기타">28일</option>
-      <option value="기타">29일</option>
-      <option value="기타">30일</option>
-      <option value="기타">31일</option>
-    </select>
-    <div class="join_title">성별</div>
-    <select class="day">
-      <option value="">성별</option>
-      <option value="">남자</option>
-      <option value="">여자</option>
-      <option value="">알수없음</option>
-    </select>
-    <div class="join_title">본인 확인 이메일</div>
-    <input type="id" class="text_box" placeholder="선택입력">
-    <div class="join_title">휴대전화</div>
-    <select class="day">
-      <option value="">대한민국 +82</option>
-      <option value="">대한민국 +82</option>
-    </select>
-    <input type="text" class="text_box" placeholder="전화번호 입력">
-    <a href='https://naver.com' target="_blank" class="link">인증번호 받기</a>
-    <input type="password" class="text_box" placeholder="인증번호를 입력하세요">
-    <a href='https://naver.com' target="_blank" class="link">가입하기</a>
-    <ul>
-      <li>이용약관</li>
-      <li>개인정보처리방침</li>
-      <li>책임과 한계와 법적고지</li>
-      <li>회원정보 고객센터</li>
-    </ul>
-  </div>
-</body>
+#big_background {
+  position: relative;
+  width: 459px;
+  height: 1350px;
+  margin: 20px auto;
+}
 
-</html>
+.join_title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.text_box {
+  position: relative;
+  margin-top: 20px;
+  width: 452px;
+  height: 50px;
+  outline: none;
+  font-size: 120%;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+}
+
+.password_box:nth-of-type(2){
+  top: 300;
+  width: 500px;
+  right: 300px;
+  background-color: aqua;
+}
+
+#naver_com {
+  position: absolute;
+  right: 13px;
+  top: 50px;
+  font-size: 150%;
+  color: gray;
+}
+
+.password_box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 50%;
+  transform: translateX(50%);
+  top: 184px;
+  overflow: hidden;
+}
+.password {
+  position: absolute;
+  width: 200px;
+}
+#password1{
+  width: 200px;
+  right: -118px;
+
+}
+
+#password_box1 {
+  top: 320px;
+
+}
+
+.text_box:nth-of-type(5) {
+  position: relative;
+  inline-size: 135px;
+}
+
+select {
+  position: relative;
+  width: 141px;
+  height: 50px;
+  outline: none;
+  font-size: 120%;
+  margin-left: 12px;
+}
+
+.day:nth-of-type(3) {
+  width: 458px;
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.day:nth-of-type(4) {
+  position: relative;
+  width: 458px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.text_box:nth-of-type(7) {
+  position: relative;
+  width: 300px;
+  float: left;
+
+}
+
+.link {
+  position: relative;
+  width: 132px;
+  height: 52px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: rgb(0, 187, 0);
+  text-align: center;
+  line-height: 52px;
+  color: white;
+  font-weight:bold;
+  text-decoration-line:none;
+  font-size: 115%;
+
+}
+.text_box:nth-of-type(8){
+  position: relative;
+  margin-top: 0;
+  background-color:transparent;
+}
+.link:nth-of-type(2){
+  position: relative;
+  margin-top: 10px;
+  width: 458px;
+  margin-left: 0;
+  font-size: 140%;
+}
+ul{
+  position: relative;
+  list-style: none;
+
+
+}
+
+
+li{
+  margin-top: 20px;
+  float: left;
+  text-align: center;
+  font-size: 70%;
+  font-weight: bold;
+  padding-right: 5px;
+  padding-left: 1%;
+}
