@@ -62,9 +62,8 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  right: 5%;
-  transform: translateX(30%);
-  top: 14%;
+  right: 10px;
+  top: 189px;
   overflow: hidden;
 }
 .password {
@@ -74,6 +73,7 @@ body {
 #password1{
   width: 200px;
   right: -118px;
+  top: 1px;
 
 }
 
